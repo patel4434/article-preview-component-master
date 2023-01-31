@@ -1,0 +1,161 @@
+body{
+    background-color: rgba(32, 55, 103, 0.926);
+    font-family: 'Manrope', sans-serif;
+   
+}
+h3{
+    color: hsl(217, 19%, 35%);
+}
+p{
+    color: darkgray;
+}
+
+.card{
+   
+    width: 800px;
+   height: 304px;
+    
+    display: inline-block;
+    
+}
+.right{ background-color: white ;
+    vertical-align: top ;
+    display: inline-block;
+    width: 60%;
+    height: 304px;
+  border-radius: 0px 10px 10px 0px;
+    
+   
+
+}
+.left{
+    overflow: hidden;
+    display: inline-block;
+    width: 40%;
+    height: 304px;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+.left img{
+    
+   height: 304px;
+   width: 100%;
+   object-fit: cover;
+   transition-property: transform;
+   transition-duration: 0.5s;
+   transition-timing-function: ease;
+}
+.text{
+    margin: 40px;
+    position: relative;
+   
+}
+.pf{display: flex;
+    margin-top: 10px;
+    height: 60px; 
+    /* overflow: hidden; */
+}
+.photo{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    
+}
+.left-pf{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+.pf-text{
+    display: inline-block;
+    
+}
+
+h4{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(57, 49, 49);
+}
+.dark{
+    margin-top: 5px;
+    color: darkgray;
+}
+.btn{
+    margin-left: 150px;
+    margin-top: 10px;
+    background-color: hsl(214, 17%, 51%);
+    border: 0px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    
+}
+.icon{
+    color: white;
+}
+.p-s{
+    color: white;
+    letter-spacing: 4px;
+    opacity: 0.5;
+
+}
+.icon-s{
+    margin-left: 15px;
+    color: white;
+    font-size: 20px;
+}
+.pop-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    background-color: hsl(214, 17%, 51%) ;
+    width: 220px;
+    border-radius: 10px;
+   position: absolute;
+    opacity: 1;
+    top: 120px;
+    left: 280px;
+    transition-property: opacity;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+    
+}
+
+.hidden{
+    /* display: none; */
+    opacity: 0;
+}
+.left:hover img{
+    transform: scale(1.1);
+
+}
+.icon-s:hover{
+    color: black;
+}
+
+@media only screen and (max-width:600px) {
+    .card{
+        height: 608px;
+    }
+    
+    .left{
+        display: block;
+        width: 480px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .right{
+        display: block;
+        border-radius: 0px 0px 10px 10px;
+       
+    }
+.text,h3{
+    margin-top: 0px;
+}
+.pop-up{
+    position: relative;
+    top: 0px;
+    left: 200px;
+}
+
+}
